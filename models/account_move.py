@@ -34,3 +34,10 @@ class AccountMove(models.Model):
                         "Obrigatoriedade Fiscal (AGT):\n"
                         "Para confirmar uma Nota de Débito é obrigatório associar a Fatura de Origem retificada."
                     ))
+                
+                
+                if move.debit_origin_id.partner_id != move.partner_id:
+                    raise ValidationError(_(
+                        "Incompatibilidade de Parceiro:\n"
+                        "A Fatura de Origem selecionada pertence a outro cliente ou fornecedor."
+                    ))
