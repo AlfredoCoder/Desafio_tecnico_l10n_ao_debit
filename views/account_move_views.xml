@@ -16,6 +16,15 @@
                 </div>
             </xpath>
 
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="debit_origin_id" 
+                       string="Fatura de Origem (AGT)"
+                       invisible="not is_debit_note" 
+                       required="is_debit_note"
+                       readonly="state != 'draft'"
+                       placeholder="Selecione a fatura confirmada que deu origem a este acréscimo..."/>
+            </xpath>
+
         </field>
     </record>
 </odoo>
