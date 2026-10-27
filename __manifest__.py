@@ -14,6 +14,10 @@ Módulo de Notas de Débito para Localização de Angola
     """,
     'author': 'Alfredo de Jesus',
     'license': 'LGPL-3',
+    'depends': [
+        'account',
+    ],
+    'data': [],
     'installable': True,
     'application': False,
     'auto_install': False,
