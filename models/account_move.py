@@ -17,5 +17,6 @@ class AccountMove(models.Model):
         string='Fatura de Origem Retificada',
         copy=False,
         tracking=True,
+        domain="[('state', '=', 'posted'), ('move_type', '=', move_type), ('partner_id', '=', partner_id)]",
         help='Fatura original validada que está a ser retificada com acréscimo de valor.'
     )
