@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
+        <record id="journal_customer_debit_note" model="account.journal">
+            <field name="name">Notas de Débito de Clientes</field>
+            <field name="code">NDCLI</field>
+            <field name="type">sale</field>
+            <field name="show_on_dashboard">True</field>
+        </record>
     </data>
 </odoo>
