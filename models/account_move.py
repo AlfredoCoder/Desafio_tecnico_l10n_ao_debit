@@ -41,3 +41,11 @@ class AccountMove(models.Model):
                         "Incompatibilidade de Parceiro:\n"
                         "A Fatura de Origem selecionada pertence a outro cliente ou fornecedor."
                     ))
+   
+    def _get_starting_sequence(self):
+       
+        starting_sequence = super(AccountMove, self)._get_starting_sequence()
+        if self.is_debit_note:
+           
+            starting_sequence = "ND " + starting_sequence
+        return starting_sequence
