@@ -10,6 +10,12 @@
                 <field name="is_debit_note" invisible="1"/>
             </xpath>
 
+            <xpath expr="//sheet" position="before">
+                <div class="alert alert-info mb-0" role="alert" invisible="not is_debit_note">
+                    <strong>Documento de Retificação:</strong> Esta é uma Nota de Débito .
+                </div>
+            </xpath>
+
         </field>
     </record>
 </odoo>
