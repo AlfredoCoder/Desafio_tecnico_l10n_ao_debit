@@ -17,7 +17,9 @@ Módulo de Notas de Débito para Localização de Angola
     'depends': [
         'account',
     ],
-    'data': [],
+    'data': [
+        'data/account_journal_data.xml',
+    ],
     'installable': True,
     'application': False,
     'auto_install': False,
