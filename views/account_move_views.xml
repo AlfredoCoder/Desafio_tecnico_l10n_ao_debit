@@ -27,4 +27,15 @@
 
         </field>
     </record>
+
+    <record id="view_invoice_tree_inherit_debit_note" model="ir.ui.view">
+        <field name="name">account.move.tree.inherit.debit.note</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_invoice_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="debit_origin_id" optional="show" string="Fatura Origem"/>
+            </xpath>
+        </field>
+    </record>
 </odoo>
