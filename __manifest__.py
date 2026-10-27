@@ -4,6 +4,16 @@
     'version': '18.0.1.0.0',
     'category': 'Accounting/Localizations',
     'summary': 'Tratamento nativo de Notas de Débito para Angola',
+    'description': """
+Módulo de Notas de Débito para Localização de Angola
+
+- Segregação de Documentos
+- Impacto Contabilistico Correcto
+- Numeração independente
+- Referência a Fatura Origem
+    """,
+    'author': 'Alfredo de Jesus',
+    'license': 'LGPL-3',
     'installable': True,
     'application': False,
     'auto_install': False,
