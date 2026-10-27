@@ -1,0 +1,15 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+
+# Odoo
+*.log
+.odoo.conf
+odoo.conf
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
