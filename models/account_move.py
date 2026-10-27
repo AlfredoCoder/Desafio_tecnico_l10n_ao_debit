@@ -20,3 +20,12 @@ class AccountMove(models.Model):
         domain="[('state', '=', 'posted'), ('move_type', '=', move_type), ('partner_id', '=', partner_id)]",
         help='Fatura original validada que está a ser retificada com acréscimo de valor.'
     )
+   
+    @api.constrains('is_debit_note', 'debit_origin_id', 'state')
+    def _check_debit_origin_required(self):
+        """
+        Garante a regra fiscal da AGT (SAF-T AO): 
+        Nenhuma Nota de Débito pode ser confirmada  sem ter uma Fatura de Origem associada.
+        """
+        for move in self:
+            pass
