@@ -28,4 +28,9 @@ class AccountMove(models.Model):
         Nenhuma Nota de Débito pode ser confirmada  sem ter uma Fatura de Origem associada.
         """
         for move in self:
-            pass
+            if move.is_debit_note and move.state == 'posted':
+                if not move.debit_origin_id:
+                    raise ValidationError(_(
+                        "Obrigatoriedade Fiscal (AGT):\n"
+                        "Para confirmar uma Nota de Débito é obrigatório associar a Fatura de Origem retificada."
+                    ))
