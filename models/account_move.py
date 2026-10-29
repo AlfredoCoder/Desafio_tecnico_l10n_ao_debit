@@ -9,7 +9,7 @@ class AccountMove(models.Model):
         default=False,
         copy=False,
         tracking=True,
-        help='Indica se este documento é uma Nota de Débito (acréscimo de dívida).'
+        help='Indica se este documento é uma Nota de Débito.'
     )
    
     debit_origin_id = fields.Many2one(
@@ -23,10 +23,7 @@ class AccountMove(models.Model):
    
     @api.constrains('is_debit_note', 'debit_origin_id', 'state')
     def _check_debit_origin_required(self):
-        """
-        Garante a regra fiscal da AGT (SAF-T AO): 
-        Nenhuma Nota de Débito pode ser confirmada  sem ter uma Fatura de Origem associada.
-        """
+        
         for move in self:
             if move.is_debit_note and move.state == 'posted':
                 if not move.debit_origin_id:
