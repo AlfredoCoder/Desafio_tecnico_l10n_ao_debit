@@ -6,7 +6,7 @@ Módulo `l10n_ao_debit` para Odoo 18.0 com implementação do tratamento Nativo 
 Implementar o tratamento nativo de Notas de Débito em Angola, assegurando:
 - Segregação de Documentos: Menus e ações dedicadas para Notas de Débito de Clientes e Fornecedores.
 - Impacto Contabilístico Correto:Documento retificativo a débito (aumento da dívida).
-- Numeração Independente: Prefixo sequencial próprio `ND`.
+- Numeração Independente: Prefixo sequencial próprio `ND`(**AO TESTAR NÃO ESQUEÇA DE SELECIONAR OS DIÁRIOS CORRECTOS  PARA SEGUIR A NUMERAÇÃO CORRECTA DE ND**).
 - Referência à Fatura Origem: Obrigatoriedade de associar uma fatura confirmada (`posted`) do mesmo parceiro.
 
 

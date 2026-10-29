@@ -23,6 +23,6 @@ Módulo de Notas de Débito para Localização de Angola
         'views/account_menu_views.xml',
     ],
     'installable': True,
-    'application': False,
+    'application': True,
     'auto_install': False,
 }
