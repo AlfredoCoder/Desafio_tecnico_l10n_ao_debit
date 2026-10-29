@@ -1,3 +1,5 @@
+OBS: Ao clonar o projecto se estiver como root use: chown -R odoo:odoo /opt/odoo/addons/community/l10n_ao_debit para não ter problemas na instalação
+
 Desafio Técnico: Módulo de Notas de Débito para Localização de Angola (Odoo 18)
 
 Módulo `l10n_ao_debit` para Odoo 18.0 com implementação do tratamento Nativo de Notas de Débito.
