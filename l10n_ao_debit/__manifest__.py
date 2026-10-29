@@ -18,7 +18,6 @@ Módulo de Notas de Débito para Localização de Angola
         'account',
     ],
     'data': [
-        'security/ir.model.access.csv',
         'data/account_journal_data.xml',
         'views/account_move_views.xml',
         'views/account_menu_views.xml',
