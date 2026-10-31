@@ -1,3 +1,5 @@
+OBS: AO TESTAR LANÇAMENTOS DE DÉBITOS TANTO PARA CLIENTES COMO FORNECERDORES NÃO ESQUEÇA DE SELECCIONAR OS DIÁRIOS CORRECTOS NO FORMULÁRIO DE LANÇAMENTO(DIÁRIO DE DÉBITO DE CLIENTE E FORNECEDORES QUE SÃO GERADOS AOS INSTALAR O MÓDULO)
+
 OBS: Ao clonar o projecto se estiver como root use: chown -R odoo:odoo /opt/odoo/addons/community/l10n_ao_debit para não ter problemas na instalação
 
 Desafio Técnico: Módulo de Notas de Débito para Localização de Angola (Odoo 18)
