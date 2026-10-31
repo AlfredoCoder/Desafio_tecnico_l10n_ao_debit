@@ -1,0 +1,27 @@
+OBS: O NOME DA PASTA A SER TRANSPORTADA PARA A addons é l10n_ao_debit que é o nome do módulo.
+
+OBS: AO TESTAR LANÇAMENTOS DE DÉBITOS TANTO PARA CLIENTES COMO FORNECERDORES NÃO ESQUEÇA DE SELECCIONAR OS DIÁRIOS CORRECTOS NO FORMULÁRIO DE LANÇAMENTO(DIÁRIO DE DÉBITO DE CLIENTE E FORNECEDORES QUE SÃO GERADOS AOS INSTALAR O MÓDULO)
+
+OBS: Ao clonar o projecto se estiver como root use: chown -R odoo:odoo /opt/odoo/addons/community/l10n_ao_debit para não ter problemas na instalação
+
+Desafio Técnico: Módulo de Notas de Débito para Localização de Angola (Odoo 18)
+
+Módulo l10n_ao_debit para Odoo 18.0 com implementação do tratamento Nativo de Notas de Débito.
+
+Implementar o tratamento nativo de Notas de Débito em Angola, assegurando:
+
+Segregação de Documentos: Menus e ações dedicadas para Notas de Débito de Clientes e Fornecedores.
+Impacto Contabilístico Correto:Documento retificativo a débito (aumento da dívida).
+Numeração Independente: Prefixo sequencial próprio ND(AO TESTAR NÃO ESQUEÇA DE SELECIONAR OS DIÁRIOS CORRECTOS PARA SEGUIR A NUMERAÇÃO CORRECTA DE ND).
+Referência à Fatura Origem: Obrigatoriedade de associar uma fatura confirmada (posted) do mesmo parceiro.
+Obrigatoriedade de Fatura de Origem: Nenhuma Nota de Débito pode ser confirmada (state == 'posted') sem ter uma debit_origin_id associada.
+
+Coerência de Parceiro: A fatura de origem deve pertencer obrigatoriamente ao mesmo cliente/fornecedor da Nota de Débito.
+
+Alerta Visual: Banner destacado no formulário identificando o documento como retificativo.
+
+Adicione esta pasta ao seu addons_path no ficheiro de configuração odoo.conf: ini addons_path = /caminho/para/odoo/addons,/caminho/para/Desafio_tecnico_l10n_ao_debit
+
+Atualize a lista de aplicações no Odoo e instale o módulo l10n_ao_debit.
+
+Alfredo de Jesus
