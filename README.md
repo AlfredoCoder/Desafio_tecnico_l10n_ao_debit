@@ -20,7 +20,7 @@ Coerência de Parceiro: A fatura de origem deve pertencer obrigatoriamente ao me
 
 Alerta Visual: Banner destacado no formulário identificando o documento como retificativo.
 
-Adicione esta pasta ao seu addons_path no ficheiro de configuração odoo.conf: ini addons_path = /caminho/para/odoo/addons,/caminho/para/Desafio_tecnico_l10n_ao_debit
+Adicione esta pasta ao seu addons_path no ficheiro de configuração odoo.conf: ini addons_path = /caminho/para/odoo/addons,/caminho/para/l10n_ao_debit
 
 Atualize a lista de aplicações no Odoo e instale o módulo l10n_ao_debit.
 
